@@ -1,0 +1,37 @@
+{
+  "name": "@busyapi/mempass-js",
+  "version": "0.2.1",
+  "module": "dist/mempass.js",
+  "types": "dist/mempass.d.ts",
+  "repository": "git@github.com:busyapi/mempass-js.git",
+  "author": "BusyAPI <contact@busyapi.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "dts-bundle-generator": "^8.1.2",
+    "rollup": "^1.0.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-string": "^3.0.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "ts-node": "^7.0.1",
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "gendef": "dts-bundle-generator -o dist/mempass.d.ts src/mempass.ts",
+    "gendicts": "ts-node gendicts.ts",
+    "postinstall": "yarn gendicts",
+    "prepublish": "yarn gendef",
+    "pretest": "yarn build",
+    "test": "ts-node test/test.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "remove-accents": "^0.5.0"
+  }
+}
