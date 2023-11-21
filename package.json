@@ -23,7 +23,6 @@
     "dev": "rollup -c -w",
     "gendef": "dts-bundle-generator -o dist/mempass.d.ts src/mempass.ts",
     "gendicts": "ts-node gendicts.ts",
-    "postinstall": "yarn gendicts",
     "prepublish": "yarn gendef",
     "pretest": "yarn build",
     "test": "ts-node test/test.ts"
