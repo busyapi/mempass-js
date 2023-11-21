@@ -1,7 +1,8 @@
 {
   "name": "@busyapi/mempass-js",
   "version": "0.2.2",
-  "module": "dist/mempass.js",
+  "main": "dist/cjs/mempass.js",
+  "module": "dist/esm/mempass.js",
   "types": "dist/mempass.d.ts",
   "repository": "git@github.com:busyapi/mempass-js.git",
   "author": "BusyAPI <contact@busyapi.dev>",
@@ -12,7 +13,6 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-string": "^3.0.0",
     "rollup-plugin-typescript": "^1.0.0",
     "ts-node": "^7.0.1",
     "tslib": "^1.9.3",
