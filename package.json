@@ -1,6 +1,6 @@
 {
   "name": "@busyapi/mempass-js",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/cjs/mempass.js",
   "module": "dist/esm/mempass.js",
   "types": "dist/mempass.d.ts",
