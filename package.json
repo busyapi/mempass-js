@@ -1,5 +1,5 @@
 {
-  "name": "@busyapi/mempass-js",
+  "name": "@busyapi/mempass",
   "version": "0.2.3",
   "main": "dist/cjs/mempass.js",
   "module": "dist/esm/mempass.js",
